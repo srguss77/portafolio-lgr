@@ -46,7 +46,7 @@ portafolio-lgr/
 - **Email:** br.luisgustavo1@gmail.com
 - **Teléfono:** +502 47916251
 - **Fiverr:** [fiverr.com/sr_gussrb](https://www.fiverr.com/sr_gussrb)
-- **GitHub:** [github.com/sr_gussrb](https://github.com/sr_gussrb)
+- **GitHub:** [github.com/sr_gussrb](https://github.com/srguss77)
 
 ---
 Desarrollado con 💙 en Guatemala — 2026
