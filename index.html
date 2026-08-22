@@ -6,8 +6,13 @@
   <meta name="description" content="Luis Gustavo Ramírez Berganza — Desarrollador Web & Programador Freelance. Guatemala." />
   <title>Luis Gustavo Ramírez | Desarrollador Web</title>
 
+  <!-- Si JS está activo, habilita las animaciones de entrada (mejora progresiva) -->
+  <script>document.documentElement.classList.add('js');</script>
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Estilos propios -->
   <link rel="stylesheet" href="css/styles.css" />
@@ -16,7 +21,7 @@
 
   <!-- ── NAVEGACIÓN ── -->
   <nav id="navbar">
-    <span class="logo">&lt;LGR /&gt;</span>
+    <span class="logo"><span class="logo-mark">LGR</span><span class="logo-sub">Dwg. Set · 2026</span></span>
     <ul id="nav-links">
       <li><a href="#sobre-mi">Sobre mí</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
@@ -34,35 +39,39 @@
 
   <!-- ── HERO ── -->
   <header class="hero">
-    <div class="hero-inner">
-      <p class="hero-tag">// Desarrollador Web &amp; Programador</p>
-      <h1>Luis Gustavo<br /><span>Ramírez Berganza</span></h1>
-      <p class="subtitle">
-        Estudiante de Ingeniería en Sistemas apasionado por crear soluciones
-        tecnológicas eficientes. Desarrollo páginas web adaptativas, scripts
-        y bases de datos funcionales.
-      </p>
-      <div class="hero-btns">
-        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-        <a href="#contacto" class="btn btn-outline">Contratarme</a>
+    <div class="hero-frame corner-frame">
+      <div class="hero-inner">
+        <p class="hero-tag">Dwg. Nº LGR‑01 &nbsp;·&nbsp; Desarrollador Web &amp; Programador</p>
+        <h1>Luis Gustavo<br /><span>Ramírez Berganza</span></h1>
+        <p class="subtitle">
+          Estudiante de Ingeniería en Sistemas apasionado por crear soluciones
+          tecnológicas eficientes. Desarrollo páginas web adaptativas, scripts
+          y bases de datos funcionales.
+        </p>
+        <div class="hero-btns">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contratarme</a>
+        </div>
+        <div class="hero-stack">
+          <span class="stack-pill">HTML5</span>
+          <span class="stack-pill">CSS3</span>
+          <span class="stack-pill">JavaScript</span>
+          <span class="stack-pill">Python</span>
+          <span class="stack-pill">Java</span>
+          <span class="stack-pill">C#</span>
+          <span class="stack-pill">SQL</span>
+          <span class="stack-pill">MySQL</span>
+          <span class="stack-pill">Git</span>
+        </div>
       </div>
-      <div class="hero-stack">
-        <span class="stack-pill">HTML5</span>
-        <span class="stack-pill">CSS3</span>
-        <span class="stack-pill">JavaScript</span>
-        <span class="stack-pill">Python</span>
-        <span class="stack-pill">Java</span>
-        <span class="stack-pill">C#</span>
-        <span class="stack-pill">SQL</span>
-        <span class="stack-pill">MySQL</span>
-        <span class="stack-pill">Git</span>
-      </div>
+      <span class="hero-annot hero-annot-left">N 14.6349° · W 90.5069° — Guatemala</span>
+      <span class="hero-annot hero-annot-right">Rev. 2026.01 · Esc. 1:1</span>
     </div>
   </header>
 
   <!-- ── SOBRE MÍ ── -->
-  <section id="sobre-mi">
-    <p class="section-label">01. Sobre mí</p>
+  <section id="sobre-mi" class="reveal">
+    <p class="section-label"><span class="sheet-no">Hoja 01/05</span><span class="sheet-name">Sobre mí</span></p>
     <h2 class="section-title">¿Quién soy?</h2>
     <div class="divider"></div>
     <div class="about-grid">
@@ -76,69 +85,72 @@
         <p>Disponible para proyectos freelance en plataformas como Fiverr,
         con capacidad de 10 a 20 horas semanales.</p>
       </div>
-      <ul class="info-list">
-        <li><span class="key">Nombre</span><span class="val">Luis Gustavo Ramírez Berganza</span></li>
-        <li><span class="key">Edad</span><span class="val">23 años</span></li>
-        <li><span class="key">Ubicación</span><span class="val">Guatemala City, Guatemala</span></li>
-        <li><span class="key">Idiomas</span><span class="val">Español (nativo) · Inglés (medio)</span></li>
-        <li><span class="key">Email</span><span class="val">br.luisgustavo1@gmail.com</span></li>
-        <li><span class="key">Teléfono</span><span class="val">+502 47916251</span></li>
-        <li><span class="key">Universidad</span><span class="val">Mariano Gálvez — Ing. Sistemas</span></li>
-        <li><span class="key">Estado</span><span class="val">✅ Disponible para proyectos</span></li>
-      </ul>
+      <div class="info-panel corner-frame">
+        <p class="block-label">Ficha técnica</p>
+        <ul class="info-list">
+          <li><span class="key">Nombre</span><span class="val">Luis Gustavo Ramírez Berganza</span></li>
+          <li><span class="key">Edad</span><span class="val">23 años</span></li>
+          <li><span class="key">Ubicación</span><span class="val">Guatemala City, Guatemala</span></li>
+          <li><span class="key">Idiomas</span><span class="val">Español (nativo) · Inglés (medio)</span></li>
+          <li><span class="key">Email</span><span class="val">br.luisgustavo1@gmail.com</span></li>
+          <li><span class="key">Teléfono</span><span class="val">+502 4791 6251</span></li>
+          <li><span class="key">Universidad</span><span class="val">Mariano Gálvez — Ing. Sistemas</span></li>
+          <li><span class="key">Estado</span><span class="val">Disponible para proyectos</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- ── HABILIDADES ── -->
-  <section id="habilidades">
-    <p class="section-label">02. Habilidades</p>
+  <section id="habilidades" class="reveal">
+    <p class="section-label"><span class="sheet-no">Hoja 02/05</span><span class="sheet-name">Habilidades</span></p>
     <h2 class="section-title">¿Qué puedo hacer?</h2>
     <div class="divider"></div>
     <div class="skills-grid">
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">🌐</div>
         <h3>Desarrollo Web</h3>
         <p>Páginas web adaptativas con HTML5, CSS3 y JavaScript. Diseño responsivo para móvil y escritorio.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">🐍</div>
         <h3>Python</h3>
         <p>Scripts de automatización, análisis de datos y fundamentos de programación orientada a objetos.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">☕</div>
         <h3>Java &amp; C#</h3>
         <p>Programas de escritorio y lógica de negocio. Orientación a objetos, estructuras y algoritmos.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">🗄️</div>
         <h3>Bases de Datos</h3>
         <p>SQL y MySQL: diseño de esquemas, consultas SELECT, JOIN, INSERT. Modelado relacional y normalización.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">🔧</div>
         <h3>Control de Versiones</h3>
         <p>Git y GitHub para versionado de proyectos. Commits, branches y manejo de repositorios.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">📊</div>
         <h3>Herramientas Office</h3>
         <p>Microsoft Excel, Word, PowerPoint y Outlook para reportes, documentación y presentaciones profesionales.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">🖥️</div>
         <h3>Soporte Técnico & Redes</h3>
         <p>Mesa de ayuda, mantenimiento de equipos, sistemas operativos, hardware, nociones de redes (VPN, firewall) y AWS básico.</p>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card corner-frame">
         <div class="skill-icon">💡</div>
         <h3>Habilidades Blandas</h3>
         <p>Análisis y resolución de problemas, autoaprendizaje, comunicación efectiva, trabajo en equipo y gestión del tiempo.</p>
@@ -148,14 +160,14 @@
   </section>
 
   <!-- ── PROYECTOS ── -->
-  <section id="proyectos">
-    <p class="section-label">03. Proyectos</p>
+  <section id="proyectos" class="reveal">
+    <p class="section-label"><span class="sheet-no">Hoja 03/05</span><span class="sheet-name">Proyectos</span></p>
     <h2 class="section-title">Trabajo reciente</h2>
     <div class="divider"></div>
     <div class="projects-grid">
 
       <!-- Proyecto 1: Restaurante -->
-      <div class="project-card">
+      <div class="project-card corner-frame">
         <div class="project-thumb blue">
           <span class="project-thumb-icon">🍽️</span>
         </div>
@@ -176,7 +188,7 @@
       </div>
 
       <!-- Proyecto 2: Dashboard Inventario -->
-      <div class="project-card">
+      <div class="project-card corner-frame">
         <div class="project-thumb green">
           <span class="project-thumb-icon">📦</span>
         </div>
@@ -197,7 +209,7 @@
       </div>
 
       <!-- Proyecto 3: Python -->
-      <div class="project-card">
+      <div class="project-card corner-frame">
         <div class="project-thumb purple">
           <span class="project-thumb-icon">🐍</span>
         </div>
@@ -219,11 +231,18 @@
   </section>
 
   <!-- ── EXPERIENCIA ── -->
-  <section id="experiencia">
-    <p class="section-label">04. Experiencia</p>
+  <section id="experiencia" class="reveal">
+    <p class="section-label"><span class="sheet-no">Hoja 04/05</span><span class="sheet-name">Experiencia</span></p>
     <h2 class="section-title">Experiencia Laboral</h2>
     <div class="divider"></div>
     <div class="timeline">
+
+      <div class="timeline-item">
+        <p class="timeline-date">Junio 2026 – Actualidad</p>
+        <h3>Representante Técnico</h3>
+        <p class="company">PBS · Productive Business Solutions · Guatemala</p>
+        <p>Soporte técnico especializado a clientes: diagnóstico, instalación, configuración y mantenimiento preventivo y correctivo de equipos de cómputo e impresoras. Atención de incidencias de hardware, software y conectividad, con documentación y seguimiento de casos. Apoyo al Coordinador de IT en administración de Active Directory, soporte a usuarios, instalación de software empresarial, autenticación multifactor (MFA) y configuración de teléfonos corporativos. Participación en el desarrollo de una herramienta interna para procesamiento y presentación de datos masivos.</p>
+      </div>
 
       <div class="timeline-item">
         <p class="timeline-date">Enero 2026 – Abril 2026</p>
@@ -243,8 +262,8 @@
   </section>
 
   <!-- ── FORMACIÓN ── -->
-  <section id="formacion">
-    <p class="section-label">05. Formación</p>
+  <section id="formacion" class="reveal">
+    <p class="section-label"><span class="sheet-no">Hoja 05/05</span><span class="sheet-name">Formación</span></p>
     <h2 class="section-title">Trayectoria Académica</h2>
     <div class="divider"></div>
     <div class="timeline">
@@ -253,7 +272,7 @@
         <p class="timeline-date">2023 — Presente</p>
         <h3>Ingeniería en Sistemas</h3>
         <p class="company">Universidad Mariano Gálvez de Guatemala</p>
-        <p>Séptimo semestre en curso. 28 cursos aprobados. Enfocado en desarrollo de software, bases de datos y algoritmos.</p>
+        <p>Octavo semestre en curso. 33 cursos aprobados. Enfocado en desarrollo de software, bases de datos y algoritmos.</p>
       </div>
 
       <div class="timeline-item">
@@ -267,14 +286,15 @@
   </section>
 
   <!-- ── CONTACTO ── -->
-  <section id="contacto">
-    <div class="contact-inner">
+  <section id="contacto" class="reveal">
+    <div class="contact-inner corner-frame">
       <h2>¿Tienes un proyecto? 🚀</h2>
       <p>Estoy disponible para proyectos freelance. Escríbeme y con gusto trabajamos juntos.</p>
       <div class="contact-links">
+        <a href="https://wa.me/50247916251?text=Hola%20Luis%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto." class="contact-chip contact-chip-primary" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
         <a href="mailto:br.luisgustavo1@gmail.com" class="contact-chip">✉️ br.luisgustavo1@gmail.com</a>
-        <a href="tel:+50247916251" class="contact-chip">📞 +502 47916251</a>
-        <a href="https://www.fiverr.com/sr_gussrb" target="_blank" class="contact-chip">🌐 Fiverr</a>
+        <a href="tel:+50247916251" class="contact-chip">📞 +502 4791 6251</a>
+        <a href="https://www.fiverr.com/sr_gussrb" target="_blank" rel="noopener" class="contact-chip">🌐 Fiverr</a>
       </div>
     </div>
   </section>
